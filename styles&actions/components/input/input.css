@@ -1,0 +1,32 @@
+input {
+  border: none;
+  outline: none;
+}
+
+label {
+  font-weight: 500;
+}
+label span {
+  color: #FF6C2D;
+}
+
+.input {
+  border-radius: 14px;
+  border: 1px solid #F1F1F1;
+  padding: 10px 16px;
+}
+.input::placeholder {
+  color: #A7A7A7;
+  font-weight: 400;
+  opacity: 1;
+}
+.input:-ms-input-placeholder {
+  color: #A7A7A7;
+  font-weight: 400;
+}
+.input::-webkit-input-placeholder {
+  color: #A7A7A7;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=input.css.map */

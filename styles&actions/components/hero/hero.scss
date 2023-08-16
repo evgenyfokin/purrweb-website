@@ -1,0 +1,61 @@
+@import '../../variables';
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__info {
+    color: $text-white;
+    padding: 92px 0 140px 110px;
+
+    p {
+      max-width: 534px;
+      font-weight: 400;
+      padding: 20px 0 40px 0;
+
+    }
+  }
+
+  &__img {
+    margin-top: auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1326px) {
+  .hero__info {
+    padding: 64px 0 0 92px;
+
+    h1 {
+      font-size: 70px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .hero {
+    flex-direction: column;
+
+    &__info {
+      padding: 64px 16px 110px 16px;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      margin-left: auto;
+      padding-left: 50px;
+      max-width: 380px;
+    }
+  }
+}

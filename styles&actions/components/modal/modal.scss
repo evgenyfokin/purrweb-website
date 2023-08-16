@@ -1,0 +1,129 @@
+@import "../../variables";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  display: none;
+  z-index: 3;
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    max-width: 417px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 20px;
+    .button_shaped {
+      margin-left: auto;
+    }
+    &-form {
+      display: flex;
+      flex-direction: column;
+      padding: 0 24px 24px 24px;
+      label {
+        margin:  10px 0 4px 0;
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+      &-terms {
+        font-weight: 300;
+        padding-bottom: 10px;
+        span {
+          color: #954CED;
+          cursor: pointer;
+          text-decoration-line: underline;
+        }
+      }
+      .button {
+        margin-right: auto;
+      }
+    }
+
+  }
+}
+
+.error-message {
+  color: $error-red;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 6px;
+}
+
+.main-error-message {
+  color: $error-red;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.modal__content_success {
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+  h3 {
+    font-size: 24px;
+    margin: 0;
+    color: $element-purple;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+  .button {
+    width: 80%;
+  }
+}
+
+#cookie {
+  display: block;
+  button:hover {
+    box-shadow: none;
+
+  }
+}
+.modal__content_cookie {
+  top: 83%;
+  max-width: 83%;
+  width: 83%;
+  &-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-right: 20px;
+    gap: 20px;
+    p {
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: 300;
+      flex-grow: 1;
+      color: #383838;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .modal__content {
+    width: 83%;
+  }
+  .modal__content_cookie {
+    top: 78%;
+    &-info {
+      flex-direction: column;
+      padding-right: 0;
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+}

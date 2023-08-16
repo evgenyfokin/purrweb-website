@@ -1,0 +1,14 @@
+@import '../../variables';
+.heading {
+  font-size: 91px;
+  font-weight: 700;
+  line-height: 106%;
+  margin: 0;
+  color: $text-white;
+}
+
+@media (max-width: 860px){
+  .heading {
+    font-size: 40px;
+  }
+}

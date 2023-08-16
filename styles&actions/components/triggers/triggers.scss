@@ -1,0 +1,39 @@
+@import "../../variables";
+.triggers {
+  padding: 40px 0;
+  background-color: $element-purple;
+  color: $text-white;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    &-item {
+      max-width: 217px;
+      text-align: left;
+      h3 {
+        font-size: 64px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .triggers__container {
+    flex-direction: column;
+    gap: 20px;
+    &-item {
+      display: flex;
+      max-width: none;
+      align-items: center;
+      gap: 20px;
+      h3 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

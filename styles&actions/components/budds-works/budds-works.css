@@ -1,0 +1,75 @@
+.budss-works {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 100px 0;
+}
+.budss-works__iphone {
+  display: block;
+  margin: 0 auto;
+  max-width: 308px;
+  z-index: 2;
+  position: relative;
+}
+.budss-works__iphone img {
+  width: 100%;
+}
+.budss-works__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 128px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.budss-works__text_span {
+  color: #444444;
+}
+
+.budss-works__text-left1 {
+  color: #2FDBBC;
+  top: 10%;
+  left: 0;
+  animation: moveLeft 20s linear infinite;
+}
+
+.budss-works__text-right {
+  color: #A64CED;
+  top: 40%;
+  right: 0;
+  animation: moveRight 20s linear infinite;
+}
+
+.budss-works__text-left2 {
+  color: #FFAA4C;
+  top: 70%;
+  left: 0;
+  animation: moveLeft 20s linear infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+@media (max-width: 600px) {
+  .budss-works__iphone {
+    max-width: 228px;
+  }
+  .budss-works__text {
+    font-size: 48px;
+  }
+}
+
+/*# sourceMappingURL=budds-works.css.map */

@@ -1,0 +1,91 @@
+@import "../../variables";
+.about {
+  background-image: url("../../../img/about.png");
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  background-position: left bottom;
+  color: $text-white;
+  h2 {
+    padding: 100px 0 80px 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    &-desc {
+      p {
+        font-size: 36px;
+        font-weight: 600;
+        max-width: 397px;
+        background-image: url("../../../img/steak.svg");
+        background-repeat: no-repeat;
+        padding-right: 18px;
+        padding-bottom: 4px;
+        background-position: right bottom;
+      }
+      span {
+        white-space: nowrap;
+      }
+
+    }
+    &-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 70px;
+      padding-bottom: 40px;
+      &-item {
+        max-width: 321px;
+        h3 {
+          font-size: 48px;
+        }
+        p {
+          padding-top: 20px;
+          font-size: 24px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1340px) {
+  .about {
+    background-image: none;
+    &__container {
+      flex-direction: column;
+      &-desc {
+        padding-bottom: 70px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 860px) {
+  .about__container-desc p {
+    font-size: 24px;
+    width: 268px;
+    background-size: 235px auto;
+    padding-right: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    h2 {
+      padding: 40px 0 30px 0;
+    }
+    &__container {
+      &-features {
+        grid-template-columns: repeat(1, 1fr);
+        &-item {
+          h3 {
+            font-size: 36px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

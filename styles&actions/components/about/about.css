@@ -1,0 +1,80 @@
+.about {
+  background-image: url("../../../img/about.png");
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  background-position: left bottom;
+  color: #FFFFFF;
+}
+.about h2 {
+  padding: 100px 0 80px 0;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+.about__container-desc p {
+  font-size: 36px;
+  font-weight: 600;
+  max-width: 397px;
+  background-image: url("../../../img/steak.svg");
+  background-repeat: no-repeat;
+  padding-right: 18px;
+  padding-bottom: 4px;
+  background-position: right bottom;
+}
+.about__container-desc span {
+  white-space: nowrap;
+}
+.about__container-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  padding-bottom: 40px;
+}
+.about__container-features-item {
+  max-width: 321px;
+}
+.about__container-features-item h3 {
+  font-size: 48px;
+}
+.about__container-features-item p {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@media (max-width: 1340px) {
+  .about {
+    background-image: none;
+  }
+  .about__container {
+    flex-direction: column;
+  }
+  .about__container-desc {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 860px) {
+  .about__container-desc p {
+    font-size: 24px;
+    width: 268px;
+    background-size: 235px auto;
+    padding-right: 6px;
+  }
+}
+@media (max-width: 600px) {
+  .about h2 {
+    padding: 40px 0 30px 0;
+  }
+  .about__container-features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about__container-features-item h3 {
+    font-size: 36px;
+  }
+  .about__container-features-item p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

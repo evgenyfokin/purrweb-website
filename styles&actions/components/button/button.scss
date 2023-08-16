@@ -1,0 +1,63 @@
+@import "../../variables";
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.button {
+  padding: 16px 30px;
+  background-color: $element-purple;
+  color: $text-white;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $main-black;
+    box-shadow: inset 0 0 0 1px $element-purple;
+  }
+  &_disabled {
+    background-color: #B9B9B9;
+    &:hover {
+      color: #B9B9B9;
+      box-shadow: inset 0 0 0 1px #B9B9B9;
+
+    }
+  }
+  &_decline {
+    background-color: $text-white;
+    color: $main-black;
+    box-shadow: inset 0 0 0 1px $element-purple;
+    &:hover {
+      color: white;
+    }
+  }
+
+}
+
+.header__above-button {
+  cursor: pointer;
+  padding: 9px 40px;
+  background-color: inherit;
+  transition: background-color 0.4s, color 0.4s;
+  border-radius: 20px 20px 0 0;
+  font-size: 16px;
+  &_active {
+    background-color: $main-black;
+    color: $text-white;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.button_shaped {
+  background-color: inherit;
+}
+
+@media (max-width: 370px) {
+  .header__above-button {
+    padding: 9px 20px;
+  }
+}

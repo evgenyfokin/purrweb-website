@@ -1,0 +1,127 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  display: none;
+  z-index: 3;
+}
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  max-width: 417px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 20px;
+}
+.modal__content .button_shaped {
+  margin-left: auto;
+}
+.modal__content-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 24px 24px;
+}
+.modal__content-form label {
+  margin: 10px 0 4px 0;
+}
+.modal__content-form label:first-of-type {
+  margin-top: 0;
+}
+.modal__content-form-terms {
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.modal__content-form-terms span {
+  color: #954CED;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.modal__content-form .button {
+  margin-right: auto;
+}
+
+.error-message {
+  color: #EC1211;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 6px;
+}
+
+.main-error-message {
+  color: #EC1211;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.modal__content_success {
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.modal__content_success h3 {
+  font-size: 24px;
+  margin: 0;
+  color: #954CED;
+}
+.modal__content_success p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+.modal__content_success .button {
+  width: 80%;
+}
+
+#cookie {
+  display: block;
+}
+#cookie button:hover {
+  box-shadow: none;
+}
+
+.modal__content_cookie {
+  top: 83%;
+  max-width: 83%;
+  width: 83%;
+}
+.modal__content_cookie-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-right: 20px;
+  gap: 20px;
+}
+.modal__content_cookie-info p {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 300;
+  flex-grow: 1;
+  color: #383838;
+}
+
+@media (max-width: 860px) {
+  .modal__content {
+    width: 83%;
+  }
+  .modal__content_cookie {
+    top: 78%;
+  }
+  .modal__content_cookie-info {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .modal__content_cookie-info button {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=modal.css.map */

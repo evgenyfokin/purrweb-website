@@ -1,0 +1,40 @@
+.triggers {
+  padding: 40px 0;
+  background-color: #954CED;
+  color: #FFFFFF;
+}
+.triggers__container {
+  display: flex;
+  justify-content: space-around;
+}
+.triggers__container-item {
+  max-width: 217px;
+  text-align: left;
+}
+.triggers__container-item h3 {
+  font-size: 64px;
+}
+.triggers__container-item p {
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .triggers__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .triggers__container-item {
+    display: flex;
+    max-width: none;
+    align-items: center;
+    gap: 20px;
+  }
+  .triggers__container-item h3 {
+    font-size: 40px;
+  }
+  .triggers__container-item p {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=triggers.css.map */

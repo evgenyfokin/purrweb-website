@@ -1,0 +1,61 @@
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.button {
+  padding: 16px 30px;
+  background-color: #954CED;
+  color: #FFFFFF;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #181818;
+  box-shadow: inset 0 0 0 1px #954CED;
+}
+.button_disabled {
+  background-color: #B9B9B9;
+}
+.button_disabled:hover {
+  color: #B9B9B9;
+  box-shadow: inset 0 0 0 1px #B9B9B9;
+}
+.button_decline {
+  background-color: #FFFFFF;
+  color: #181818;
+  box-shadow: inset 0 0 0 1px #954CED;
+}
+.button_decline:hover {
+  color: white;
+}
+
+.header__above-button {
+  cursor: pointer;
+  padding: 9px 40px;
+  background-color: inherit;
+  transition: background-color 0.4s, color 0.4s;
+  border-radius: 20px 20px 0 0;
+  font-size: 16px;
+}
+.header__above-button_active {
+  background-color: #181818;
+  color: #FFFFFF;
+  border-radius: 20px 20px 0 0;
+}
+
+.button_shaped {
+  background-color: inherit;
+}
+
+@media (max-width: 370px) {
+  .header__above-button {
+    padding: 9px 20px;
+  }
+}
+
+/*# sourceMappingURL=button.css.map */

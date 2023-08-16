@@ -1,0 +1,46 @@
+@import "../../variables";
+
+.header__above {
+  background-color: #FFAA4C;
+  &-list {
+    list-style-type: none;
+    display: flex;
+  }
+}
+
+.header__below {
+  background-color: $main-black;
+  padding: 7px 0;
+  &-holder {
+    display: flex;
+    justify-content: space-between;
+    .button_shaped {
+      display: none;
+    }
+    &-logo{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 8px;
+      span {
+        color: $text-white;
+        font-size: 37px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .container_wide {
+    padding: 0;
+  }
+  .header__below-holder {
+    .button {
+      display: none;
+    }
+    .button_shaped {
+      display: block;
+    }
+  }
+}
