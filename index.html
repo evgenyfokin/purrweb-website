@@ -285,27 +285,6 @@
 <script defer type="module" src="index.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $("#inputPhone").inputmask({
-            mask: "+7 999 999 99 99",
-            placeholder: " ",
-            clearIncomplete: true,
-            oncomplete: function() {
-                var validCodes = ["495", "499", "812", "383", "343", "843", "831", "351", "8182", "4722", "4852"];
-                var enteredCode = $(this).val().split(' ')[1];
-                if (validCodes.includes(enteredCode)) {
-                    console.log('Valid phone number');
-                } else {
-                    alert('Invalid city/operator code!');
-                    $(this).val("");
-                }
-            },
-            onincomplete: function() {
-                alert('Please enter the full number');
-            }
-        });
-    });
-</script>
+<script src="styles&actions/components/modal/phoneValidation.js"></script>
 </body>
 </html>
