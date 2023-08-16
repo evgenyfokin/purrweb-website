@@ -28,7 +28,6 @@ const modalToggle = (modalId, toggleButtons, closeButtonId, secondaryCloseButton
             const closeBtn = document.getElementById(btn);
             close(closeBtn)
         })
-        // close(secondaryCloseBtn);
     }
 }
 
